@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		9A1D4EC9B50AA956B15D72D4 /* Pods_dreamly.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2E71F3A3AD21EBBE17FDC3C /* Pods_dreamly.framework */; };
+		E07439C12357C69000F6B946 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E07439C02357C69000F6B946 /* ProfileViewController.swift */; };
 		E0A34B2523579330004B1584 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E0A34B2423579330004B1584 /* GoogleService-Info.plist */; };
 		E0A34B27235799EB004B1584 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0A34B26235799EB004B1584 /* LoginViewController.swift */; };
 		E0CF0365235674BC00B20B22 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0CF0364235674BC00B20B22 /* AppDelegate.swift */; };
@@ -21,6 +22,7 @@
 /* Begin PBXFileReference section */
 		3E2E354746E53FC3A7D615FC /* Pods-dreamly.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-dreamly.debug.xcconfig"; path = "Target Support Files/Pods-dreamly/Pods-dreamly.debug.xcconfig"; sourceTree = "<group>"; };
 		775E5C7A15C8E7F63DFEB033 /* Pods-dreamly.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-dreamly.release.xcconfig"; path = "Target Support Files/Pods-dreamly/Pods-dreamly.release.xcconfig"; sourceTree = "<group>"; };
+		E07439C02357C69000F6B946 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		E0A34B2423579330004B1584 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		E0A34B26235799EB004B1584 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		E0CF0361235674BC00B20B22 /* dreamly.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = dreamly.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -93,6 +95,7 @@
 				E0CF036B235674BC00B20B22 /* dreamly.xcdatamodeld */,
 				E0A34B2423579330004B1584 /* GoogleService-Info.plist */,
 				E0A34B26235799EB004B1584 /* LoginViewController.swift */,
+				E07439C02357C69000F6B946 /* ProfileViewController.swift */,
 			);
 			path = dreamly;
 			sourceTree = "<group>";
@@ -226,6 +229,7 @@
 			files = (
 				E0A34B27235799EB004B1584 /* LoginViewController.swift in Sources */,
 				E0CF0367235674BC00B20B22 /* ViewController.swift in Sources */,
+				E07439C12357C69000F6B946 /* ProfileViewController.swift in Sources */,
 				E0CF036D235674BC00B20B22 /* dreamly.xcdatamodeld in Sources */,
 				E0CF0365235674BC00B20B22 /* AppDelegate.swift in Sources */,
 			);
