@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="g9Y-TC-2lT">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Xbi-1p-iJD">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -55,6 +55,54 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Fir-fk-tr9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1239.1304347826087" y="-588.61607142857144"/>
+        </scene>
+        <!--Login View Controller-->
+        <scene sceneID="VHb-mV-9aL">
+            <objects>
+                <viewController id="Xbi-1p-iJD" customClass="LoginViewController" customModule="dreamly" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2FF-TP-ISA">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eLn-rN-e0s">
+                                <rect key="frame" x="129" y="380" width="156" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qBq-pU-ynS">
+                                <rect key="frame" x="129" y="430" width="156" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nV2-CB-0gg">
+                                <rect key="frame" x="188" y="486" width="38" height="30"/>
+                                <state key="normal" title="Login"/>
+                                <connections>
+                                    <action selector="loginPressed:" destination="Xbi-1p-iJD" eventType="touchUpInside" id="LIV-vR-1Jr"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.12549019610000001" green="0.12549019610000001" blue="0.25098039220000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="eLn-rN-e0s" firstAttribute="centerX" secondItem="2FF-TP-ISA" secondAttribute="centerX" id="4lq-xe-ddh"/>
+                            <constraint firstItem="eLn-rN-e0s" firstAttribute="trailing" secondItem="qBq-pU-ynS" secondAttribute="trailing" id="AUa-KK-Di6"/>
+                            <constraint firstItem="qBq-pU-ynS" firstAttribute="centerX" secondItem="nV2-CB-0gg" secondAttribute="centerX" id="BKt-kx-88Y"/>
+                            <constraint firstItem="eLn-rN-e0s" firstAttribute="leading" secondItem="qBq-pU-ynS" secondAttribute="leading" id="FnB-WH-Zi3"/>
+                            <constraint firstItem="nV2-CB-0gg" firstAttribute="top" secondItem="qBq-pU-ynS" secondAttribute="bottom" constant="22" id="ISQ-FK-skG"/>
+                            <constraint firstItem="qBq-pU-ynS" firstAttribute="top" secondItem="eLn-rN-e0s" secondAttribute="bottom" constant="16" id="Ta0-4w-GNY"/>
+                            <constraint firstItem="eLn-rN-e0s" firstAttribute="top" secondItem="Opp-xD-lHo" secondAttribute="top" constant="336" id="U1A-N7-1NW"/>
+                            <constraint firstItem="eLn-rN-e0s" firstAttribute="leading" secondItem="Opp-xD-lHo" secondAttribute="leading" constant="129" id="wln-Ig-SmJ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Opp-xD-lHo"/>
+                    </view>
+                    <connections>
+                        <outlet property="loginTextField" destination="eLn-rN-e0s" id="OdB-YS-MaS"/>
+                        <outlet property="passwordTextField" destination="qBq-pU-ynS" id="WcS-kC-gbU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="06h-kW-7dO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1820.289855072464" y="219.64285714285714"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="a7E-Bo-f1W">

@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "ACE8ED87C5AF164F76976E2F04E76CBE"
+               BlueprintIdentifier = "DA33E51643A5EB031D8FF03370542EFF"
                BuildableName = "Pods_dreamly.framework"
                BlueprintName = "Pods-dreamly"
                ReferencedContainer = "container:Pods.xcodeproj">

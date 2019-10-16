@@ -7,6 +7,8 @@ target 'dreamly' do
 
   # Pods for dreamly
 
-pod 'Firebase/Analytics'
-
+	pod 'Firebase/Analytics'
+	pod 'Firebase/Auth'
+	pod 'Firebase/Core'
+	pod 'Firebase/Database'
 end

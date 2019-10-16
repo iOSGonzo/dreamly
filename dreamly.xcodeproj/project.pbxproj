@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		9A1D4EC9B50AA956B15D72D4 /* Pods_dreamly.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2E71F3A3AD21EBBE17FDC3C /* Pods_dreamly.framework */; };
 		E0A34B2523579330004B1584 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E0A34B2423579330004B1584 /* GoogleService-Info.plist */; };
+		E0A34B27235799EB004B1584 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0A34B26235799EB004B1584 /* LoginViewController.swift */; };
 		E0CF0365235674BC00B20B22 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0CF0364235674BC00B20B22 /* AppDelegate.swift */; };
 		E0CF0367235674BC00B20B22 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0CF0366235674BC00B20B22 /* ViewController.swift */; };
 		E0CF036A235674BC00B20B22 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0CF0368235674BC00B20B22 /* Main.storyboard */; };
@@ -21,6 +22,7 @@
 		3E2E354746E53FC3A7D615FC /* Pods-dreamly.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-dreamly.debug.xcconfig"; path = "Target Support Files/Pods-dreamly/Pods-dreamly.debug.xcconfig"; sourceTree = "<group>"; };
 		775E5C7A15C8E7F63DFEB033 /* Pods-dreamly.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-dreamly.release.xcconfig"; path = "Target Support Files/Pods-dreamly/Pods-dreamly.release.xcconfig"; sourceTree = "<group>"; };
 		E0A34B2423579330004B1584 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		E0A34B26235799EB004B1584 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		E0CF0361235674BC00B20B22 /* dreamly.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = dreamly.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0CF0364235674BC00B20B22 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E0CF0366235674BC00B20B22 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -90,6 +92,7 @@
 				E0CF0373235674BF00B20B22 /* Info.plist */,
 				E0CF036B235674BC00B20B22 /* dreamly.xcdatamodeld */,
 				E0A34B2423579330004B1584 /* GoogleService-Info.plist */,
+				E0A34B26235799EB004B1584 /* LoginViewController.swift */,
 			);
 			path = dreamly;
 			sourceTree = "<group>";
@@ -195,14 +198,18 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-dreamly/Pods-dreamly-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 			);
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -217,6 +224,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E0A34B27235799EB004B1584 /* LoginViewController.swift in Sources */,
 				E0CF0367235674BC00B20B22 /* ViewController.swift in Sources */,
 				E0CF036D235674BC00B20B22 /* dreamly.xcdatamodeld in Sources */,
 				E0CF0365235674BC00B20B22 /* AppDelegate.swift in Sources */,
