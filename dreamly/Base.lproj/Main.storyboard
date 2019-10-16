@@ -13,7 +13,7 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="dreamly" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="725"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="703"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.12549019607843137" green="0.12549019607843137" blue="0.25098039215686274" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -29,7 +29,7 @@
             <objects>
                 <viewController id="mbh-65-tl1" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="I5M-OO-wkz">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="725"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="703"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.12549019610000001" green="0.12549019610000001" blue="0.25098039220000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="LgI-ay-bSm"/>
@@ -45,7 +45,7 @@
             <objects>
                 <viewController id="5uM-bv-ehb" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7kR-JB-iPG">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="725"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="703"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.12549019610000001" green="0.12549019610000001" blue="0.25098039220000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="BAe-UL-JrA"/>
@@ -106,16 +106,18 @@
                     <connections>
                         <outlet property="emailTextField" destination="eLn-rN-e0s" id="Mld-vb-cMD"/>
                         <outlet property="passwordTextField" destination="qBq-pU-ynS" id="WcS-kC-gbU"/>
+                        <segue destination="g9Y-TC-2lT" kind="show" identifier="toMain" id="ilB-h3-zdi"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="06h-kW-7dO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1820.289855072464" y="219.64285714285714"/>
+            <point key="canvasLocation" x="-1804" y="220"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="a7E-Bo-f1W">
             <objects>
-                <tabBarController id="g9Y-TC-2lT" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="mainTabBarController" modalPresentationStyle="fullScreen" id="g9Y-TC-2lT" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="a1f-fX-l90"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="i1m-oV-jMq">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -139,11 +141,11 @@
                     <tabBarItem key="tabBarItem" title="Tips" id="m5a-Ly-CCI"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="lxA-9r-mG5">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" red="0.28627450980000002" green="0.28627450980000002" blue="0.41568627450000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <textAttributes key="titleTextAttributes">
-                            <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="30"/>
+                            <fontDescription key="fontDescription" name="Lato-Heavy" family="Lato" pointSize="30"/>
                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </textAttributes>
                     </navigationBar>
@@ -163,7 +165,7 @@
                     <tabBarItem key="tabBarItem" title="Journal" id="Idq-41-dbh"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="KYu-9O-mFS">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" red="0.28627450980000002" green="0.28627450980000002" blue="0.41568627450000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <textAttributes key="titleTextAttributes">
@@ -187,7 +189,7 @@
                     <tabBarItem key="tabBarItem" title="Profile" id="jKM-K3-c3T"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="ddv-Is-h4E">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" red="0.28627450980000002" green="0.28627450980000002" blue="0.41568627450000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <textAttributes key="titleTextAttributes">

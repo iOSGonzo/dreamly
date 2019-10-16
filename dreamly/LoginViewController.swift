@@ -33,8 +33,7 @@ class LoginViewController: UIViewController {
                 else{
                     let uid = result?.user.uid
                     let ref = Database.database().reference(withPath: "users").child(uid!)
-                    ref.setValue(["email":self.emailTextField.text!])
-                    ref.setValue(["password":self.passwordTextField.text!])
+                    ref.setValue(["email":self.emailTextField.text!, "password":self.passwordTextField.text!])
                 }
             }
         }
@@ -49,6 +48,7 @@ class LoginViewController: UIViewController {
                     print("Error!:(")
                 }
                 else{
+                    self.performSegue(withIdentifier: "toMain", sender: self)
                     //let uid = result?.user.uid
                 }
             }
