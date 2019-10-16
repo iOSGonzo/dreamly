@@ -13,6 +13,8 @@ import FirebaseDatabase
 
 class LoginViewController: UIViewController {
 
+    var uid: String = ""
+    
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     
@@ -31,8 +33,8 @@ class LoginViewController: UIViewController {
                     print("Error!:(")
                 }
                 else{
-                    let uid = result?.user.uid
-                    let ref = Database.database().reference(withPath: "users").child(uid!)
+                    self.uid = (result?.user.uid)!
+                    let ref = Database.database().reference(withPath: "users").child(self.uid)
                     ref.setValue(["email":self.emailTextField.text!, "password":self.passwordTextField.text!])
                 }
             }
@@ -49,7 +51,7 @@ class LoginViewController: UIViewController {
                 }
                 else{
                     self.performSegue(withIdentifier: "toMain", sender: self)
-                    //let uid = result?.user.uid
+                    self.uid = (result?.user.uid)!
                 }
             }
         }
