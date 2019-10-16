@@ -13,7 +13,6 @@ import FirebaseAuth
 
 class ProfileViewController: UIViewController {
     
-    
     @IBOutlet weak var emailLabel: UILabel!
     
     override func viewDidLoad() {
