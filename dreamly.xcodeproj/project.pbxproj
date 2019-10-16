@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9A1D4EC9B50AA956B15D72D4 /* Pods_dreamly.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2E71F3A3AD21EBBE17FDC3C /* Pods_dreamly.framework */; };
+		E0A34B2523579330004B1584 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E0A34B2423579330004B1584 /* GoogleService-Info.plist */; };
 		E0CF0365235674BC00B20B22 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0CF0364235674BC00B20B22 /* AppDelegate.swift */; };
 		E0CF0367235674BC00B20B22 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0CF0366235674BC00B20B22 /* ViewController.swift */; };
 		E0CF036A235674BC00B20B22 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0CF0368235674BC00B20B22 /* Main.storyboard */; };
@@ -16,6 +18,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3E2E354746E53FC3A7D615FC /* Pods-dreamly.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-dreamly.debug.xcconfig"; path = "Target Support Files/Pods-dreamly/Pods-dreamly.debug.xcconfig"; sourceTree = "<group>"; };
+		775E5C7A15C8E7F63DFEB033 /* Pods-dreamly.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-dreamly.release.xcconfig"; path = "Target Support Files/Pods-dreamly/Pods-dreamly.release.xcconfig"; sourceTree = "<group>"; };
+		E0A34B2423579330004B1584 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		E0CF0361235674BC00B20B22 /* dreamly.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = dreamly.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0CF0364235674BC00B20B22 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E0CF0366235674BC00B20B22 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +29,7 @@
 		E0CF036E235674BF00B20B22 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E0CF0371235674BF00B20B22 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E0CF0373235674BF00B20B22 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E2E71F3A3AD21EBBE17FDC3C /* Pods_dreamly.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_dreamly.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +37,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9A1D4EC9B50AA956B15D72D4 /* Pods_dreamly.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		98DCABDE77271450A8E5C418 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E2E71F3A3AD21EBBE17FDC3C /* Pods_dreamly.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C1EFC30F6624F7B6EABE5C25 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3E2E354746E53FC3A7D615FC /* Pods-dreamly.debug.xcconfig */,
+				775E5C7A15C8E7F63DFEB033 /* Pods-dreamly.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		E0CF0358235674BC00B20B22 = {
 			isa = PBXGroup;
 			children = (
 				E0CF0363235674BC00B20B22 /* dreamly */,
 				E0CF0362235674BC00B20B22 /* Products */,
+				C1EFC30F6624F7B6EABE5C25 /* Pods */,
+				98DCABDE77271450A8E5C418 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -63,6 +89,7 @@
 				E0CF0370235674BF00B20B22 /* LaunchScreen.storyboard */,
 				E0CF0373235674BF00B20B22 /* Info.plist */,
 				E0CF036B235674BC00B20B22 /* dreamly.xcdatamodeld */,
+				E0A34B2423579330004B1584 /* GoogleService-Info.plist */,
 			);
 			path = dreamly;
 			sourceTree = "<group>";
@@ -74,9 +101,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E0CF0376235674BF00B20B22 /* Build configuration list for PBXNativeTarget "dreamly" */;
 			buildPhases = (
+				B31963C53EA0FC8C5675809D /* [CP] Check Pods Manifest.lock */,
 				E0CF035D235674BC00B20B22 /* Sources */,
 				E0CF035E235674BC00B20B22 /* Frameworks */,
 				E0CF035F235674BC00B20B22 /* Resources */,
+				C6F4AB6FD4596721D64F127E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -128,10 +157,60 @@
 				E0CF0372235674BF00B20B22 /* LaunchScreen.storyboard in Resources */,
 				E0CF036F235674BF00B20B22 /* Assets.xcassets in Resources */,
 				E0CF036A235674BC00B20B22 /* Main.storyboard in Resources */,
+				E0A34B2523579330004B1584 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B31963C53EA0FC8C5675809D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-dreamly-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C6F4AB6FD4596721D64F127E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-dreamly/Pods-dreamly-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-dreamly/Pods-dreamly-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E0CF035D235674BC00B20B22 /* Sources */ = {
@@ -284,6 +363,7 @@
 		};
 		E0CF0377235674BF00B20B22 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3E2E354746E53FC3A7D615FC /* Pods-dreamly.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -302,6 +382,7 @@
 		};
 		E0CF0378235674BF00B20B22 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 775E5C7A15C8E7F63DFEB033 /* Pods-dreamly.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

@@ -1,0 +1,6 @@
+framework module Pods_dreamly {
+  umbrella header "Pods-dreamly-umbrella.h"
+
+  export *
+  module * { export * }
+}
