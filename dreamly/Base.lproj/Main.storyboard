@@ -105,11 +105,11 @@
             </objects>
             <point key="canvasLocation" x="-809" y="220"/>
         </scene>
-        <!--Item 1-->
+        <!--Tips-->
         <scene sceneID="S0l-WB-JYS">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="RMC-5d-36q" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item 1" id="m5a-Ly-CCI"/>
+                    <tabBarItem key="tabBarItem" title="Tips" id="m5a-Ly-CCI"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="lxA-9r-mG5">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -125,11 +125,11 @@
             </objects>
             <point key="canvasLocation" x="328.98550724637681" y="-588.61607142857144"/>
         </scene>
-        <!--Item 2-->
+        <!--Journal-->
         <scene sceneID="3Er-dY-IXe">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="bRL-xD-umb" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item 2" id="Idq-41-dbh"/>
+                    <tabBarItem key="tabBarItem" title="Journal" id="Idq-41-dbh"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="KYu-9O-mFS">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -145,11 +145,11 @@
             </objects>
             <point key="canvasLocation" x="328" y="108"/>
         </scene>
-        <!--Item-->
+        <!--Profile-->
         <scene sceneID="2m1-8d-wR4">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="a7I-Qs-lon" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="jKM-K3-c3T"/>
+                    <tabBarItem key="tabBarItem" title="Profile" id="jKM-K3-c3T"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="ddv-Is-h4E">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
