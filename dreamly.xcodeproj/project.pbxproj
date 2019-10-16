@@ -12,7 +12,7 @@
 		E0A34B2523579330004B1584 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E0A34B2423579330004B1584 /* GoogleService-Info.plist */; };
 		E0A34B27235799EB004B1584 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0A34B26235799EB004B1584 /* LoginViewController.swift */; };
 		E0CF0365235674BC00B20B22 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0CF0364235674BC00B20B22 /* AppDelegate.swift */; };
-		E0CF0367235674BC00B20B22 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0CF0366235674BC00B20B22 /* ViewController.swift */; };
+		E0CF0367235674BC00B20B22 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0CF0366235674BC00B20B22 /* MainTabBarController.swift */; };
 		E0CF036A235674BC00B20B22 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0CF0368235674BC00B20B22 /* Main.storyboard */; };
 		E0CF036D235674BC00B20B22 /* dreamly.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E0CF036B235674BC00B20B22 /* dreamly.xcdatamodeld */; };
 		E0CF036F235674BF00B20B22 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E0CF036E235674BF00B20B22 /* Assets.xcassets */; };
@@ -27,7 +27,7 @@
 		E0A34B26235799EB004B1584 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		E0CF0361235674BC00B20B22 /* dreamly.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = dreamly.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0CF0364235674BC00B20B22 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E0CF0366235674BC00B20B22 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E0CF0366235674BC00B20B22 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		E0CF0369235674BC00B20B22 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E0CF036C235674BC00B20B22 /* dreamly.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = dreamly.xcdatamodel; sourceTree = "<group>"; };
 		E0CF036E235674BF00B20B22 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -87,7 +87,7 @@
 			isa = PBXGroup;
 			children = (
 				E0CF0364235674BC00B20B22 /* AppDelegate.swift */,
-				E0CF0366235674BC00B20B22 /* ViewController.swift */,
+				E0CF0366235674BC00B20B22 /* MainTabBarController.swift */,
 				E0CF0368235674BC00B20B22 /* Main.storyboard */,
 				E0CF036E235674BF00B20B22 /* Assets.xcassets */,
 				E0CF0370235674BF00B20B22 /* LaunchScreen.storyboard */,
@@ -228,7 +228,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E0A34B27235799EB004B1584 /* LoginViewController.swift in Sources */,
-				E0CF0367235674BC00B20B22 /* ViewController.swift in Sources */,
+				E0CF0367235674BC00B20B22 /* MainTabBarController.swift in Sources */,
 				E07439C12357C69000F6B946 /* ProfileViewController.swift in Sources */,
 				E0CF036D235674BC00B20B22 /* dreamly.xcdatamodeld in Sources */,
 				E0CF0365235674BC00B20B22 /* AppDelegate.swift in Sources */,

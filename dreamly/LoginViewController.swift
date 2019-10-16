@@ -25,22 +25,26 @@ class LoginViewController: UIViewController {
     }
 
     
-    @IBAction func registerPressed(_ sender: UIButton) {
+    @IBAction func registerPressed(_ sender: Any) {
         
-        if emailTextField.text != nil && passwordTextField.text != nil{
-            Auth.auth().createUser(withEmail: emailTextField.text!, password: passwordTextField.text!) { (result, error) in
-                if error != nil{
-                    print("Error!:(")
-                }
-                else{
-                    self.uid = (result?.user.uid)!
-                    let ref = Database.database().reference(withPath: "users").child(self.uid)
-                    ref.setValue(["email":self.emailTextField.text!, "password":self.passwordTextField.text!])
+
+            if emailTextField.text != nil && passwordTextField.text != nil{
+                Auth.auth().createUser(withEmail: emailTextField.text!, password: passwordTextField.text!) { (result, error) in
+                    if error != nil{
+                        print("Error!:( + " + error!.localizedDescription)
+                    }
+                    else{
+                        self.uid = (result?.user.uid)!
+                        let ref = Database.database().reference(withPath: "users").child(self.uid)
+                        ref.setValue(["email":self.emailTextField.text!, "password":self.passwordTextField.text!])
+                    }
                 }
             }
+            
         }
+
         
-    }
+    
     
     
     @IBAction func loginPressed(_ sender: Any) {
@@ -50,7 +54,6 @@ class LoginViewController: UIViewController {
                     print("Error!:(")
                 }
                 else{
-                    self.performSegue(withIdentifier: "toMain", sender: self)
                     self.uid = (result?.user.uid)!
                 }
             }

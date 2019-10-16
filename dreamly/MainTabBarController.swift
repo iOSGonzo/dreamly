@@ -10,7 +10,7 @@ import UIKit
 import FirebaseDatabase
 import FirebaseAuth
 
-class ViewController: UIViewController {
+class MainTabBarController: UIViewController {
 
             
     override func viewDidLoad() {

@@ -23,5 +23,9 @@ class ProfileViewController: UIViewController {
         emailLabel.text = "Email: " + userEmail!
     }
 
+    @IBAction func logoutBtnPressed(_ sender: UIButton) {
+        try! Auth.auth().signOut()
+    }
+    
 
 }
