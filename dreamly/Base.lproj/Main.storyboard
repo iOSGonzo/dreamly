@@ -75,10 +75,18 @@
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nV2-CB-0gg">
-                                <rect key="frame" x="188" y="486" width="38" height="30"/>
+                                <rect key="frame" x="119.5" y="485" width="57" height="30"/>
+                                <state key="normal" title="Register"/>
+                                <connections>
+                                    <action selector="registerPressed:" destination="Xbi-1p-iJD" eventType="touchUpInside" id="dQT-tl-C04"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="biQ-w3-kVV">
+                                <rect key="frame" x="248" y="485" width="38" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Login"/>
                                 <connections>
-                                    <action selector="loginPressed:" destination="Xbi-1p-iJD" eventType="touchUpInside" id="LIV-vR-1Jr"/>
+                                    <action selector="loginPressed:" destination="Xbi-1p-iJD" eventType="touchUpInside" id="cQf-Xo-fpP"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -86,9 +94,9 @@
                         <constraints>
                             <constraint firstItem="eLn-rN-e0s" firstAttribute="centerX" secondItem="2FF-TP-ISA" secondAttribute="centerX" id="4lq-xe-ddh"/>
                             <constraint firstItem="eLn-rN-e0s" firstAttribute="trailing" secondItem="qBq-pU-ynS" secondAttribute="trailing" id="AUa-KK-Di6"/>
-                            <constraint firstItem="qBq-pU-ynS" firstAttribute="centerX" secondItem="nV2-CB-0gg" secondAttribute="centerX" id="BKt-kx-88Y"/>
+                            <constraint firstItem="qBq-pU-ynS" firstAttribute="centerX" secondItem="nV2-CB-0gg" secondAttribute="centerX" constant="59" id="BKt-kx-88Y"/>
                             <constraint firstItem="eLn-rN-e0s" firstAttribute="leading" secondItem="qBq-pU-ynS" secondAttribute="leading" id="FnB-WH-Zi3"/>
-                            <constraint firstItem="nV2-CB-0gg" firstAttribute="top" secondItem="qBq-pU-ynS" secondAttribute="bottom" constant="22" id="ISQ-FK-skG"/>
+                            <constraint firstItem="nV2-CB-0gg" firstAttribute="top" secondItem="qBq-pU-ynS" secondAttribute="bottom" constant="21" id="ISQ-FK-skG"/>
                             <constraint firstItem="qBq-pU-ynS" firstAttribute="top" secondItem="eLn-rN-e0s" secondAttribute="bottom" constant="16" id="Ta0-4w-GNY"/>
                             <constraint firstItem="eLn-rN-e0s" firstAttribute="top" secondItem="Opp-xD-lHo" secondAttribute="top" constant="336" id="U1A-N7-1NW"/>
                             <constraint firstItem="eLn-rN-e0s" firstAttribute="leading" secondItem="Opp-xD-lHo" secondAttribute="leading" constant="129" id="wln-Ig-SmJ"/>
@@ -96,7 +104,7 @@
                         <viewLayoutGuide key="safeArea" id="Opp-xD-lHo"/>
                     </view>
                     <connections>
-                        <outlet property="loginTextField" destination="eLn-rN-e0s" id="OdB-YS-MaS"/>
+                        <outlet property="emailTextField" destination="eLn-rN-e0s" id="Mld-vb-cMD"/>
                         <outlet property="passwordTextField" destination="qBq-pU-ynS" id="WcS-kC-gbU"/>
                     </connections>
                 </viewController>
