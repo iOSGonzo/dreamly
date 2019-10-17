@@ -342,6 +342,7 @@
                     <connections>
                         <outlet property="dreamTextField" destination="bFr-7w-TPp" id="iFD-Q5-6eD"/>
                         <outlet property="dreamTitleTextField" destination="VAs-v8-O8E" id="mIe-V0-wcP"/>
+                        <outlet property="editRating" destination="LQw-sI-fSt" id="qQG-9k-rj5"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cuB-a8-zGb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

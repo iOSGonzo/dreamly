@@ -10,13 +10,14 @@ import Foundation
 import UIKit
 import Firebase
 import NotificationCenter
-
+import Cosmos
 
 class AddDreamViewController: UIViewController{
     
 
     @IBOutlet weak var dreamTextField: UITextField!
     @IBOutlet weak var dreamTitleTextField: UITextField!
+    @IBOutlet weak var editRating: CosmosView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,8 +31,37 @@ class AddDreamViewController: UIViewController{
     
     
     @IBAction func saveDream(_ sender: Any) {
-        self.dismiss(animated: true, completion: nil)
+        
+        //firebase
+        
+        let dreamRef = Database.database().reference().child("dreams").childByAutoId()
+        
+        let dreamObject = [
+            "title":dreamTitleTextField.text,
+            "notes":dreamTextField.text,
+            "date":Date().today(),
+            "rating": editRating?.rating
+        ] as [String: Any]
+        
+        dreamRef.setValue(nil, withCompletionBlock: {error, red in
+            if error == nil{
+                self.dismiss(animated: true, completion: nil)
+            }else{
+                print("error saving")
+            }
+        })
+        
     }
     
     
+}
+
+extension Date {
+
+   func today(format : String = "dd-MM-yyyy") -> String{
+      let date = Date()
+      let formatter = DateFormatter()
+      formatter.dateFormat = format
+      return formatter.string(from: date)
+   }
 }
