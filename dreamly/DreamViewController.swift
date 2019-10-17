@@ -34,6 +34,7 @@ class DreamViewController: UIViewController, UITableViewDelegate, UITableViewDat
         tableView.topAnchor.constraint(equalTo: layoutGuide.topAnchor).isActive = true
         tableView.trailingAnchor.constraint(equalTo: layoutGuide.trailingAnchor).isActive = true
         tableView.bottomAnchor.constraint(equalTo: layoutGuide.bottomAnchor).isActive = true
+        tableView.separatorStyle = UITableViewCell.SeparatorStyle.none
 
         
         tableView.delegate = self
