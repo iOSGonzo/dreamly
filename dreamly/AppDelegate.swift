@@ -26,12 +26,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             let storyboard = UIStoryboard(name: "Main", bundle: nil)
 
             if user != nil{
-                
+                UserService.observeUserProfile(user!.uid, completion: { userProfile in
+                    UserService.currentUserProfile = userProfile
+                })
                 let controller = storyboard.instantiateViewController(withIdentifier: "MainTabBarController") as! UITabBarController
                 self.window?.rootViewController = controller
                 self.window?.makeKeyAndVisible()
                 
             }else{
+                
+                UserService.currentUserProfile = nil
  
                 let controller = storyboard.instantiateViewController(withIdentifier: "LoginViewController") as! LoginViewController
                 self.window?.rootViewController = controller

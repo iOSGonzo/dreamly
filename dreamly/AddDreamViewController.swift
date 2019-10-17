@@ -32,18 +32,25 @@ class AddDreamViewController: UIViewController{
     
     @IBAction func saveDream(_ sender: Any) {
         
+        
+        guard let userProfile = UserService.currentUserProfile else { return }
         //firebase
         
         let dreamRef = Database.database().reference().child("dreams").childByAutoId()
         
         let dreamObject = [
+            "author": [
+                "uid": userProfile.uid,
+                "email": userProfile.email
+            ],
+            
             "title":dreamTitleTextField.text,
             "notes":dreamTextField.text,
             "date":Date().today(),
             "rating": editRating?.rating
         ] as [String: Any]
         
-        dreamRef.setValue(nil, withCompletionBlock: {error, red in
+        dreamRef.setValue(dreamObject, withCompletionBlock: {error, ref in
             if error == nil{
                 self.dismiss(animated: true, completion: nil)
             }else{

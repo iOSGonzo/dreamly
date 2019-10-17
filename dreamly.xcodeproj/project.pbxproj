@@ -16,6 +16,7 @@
 		E07439D023580B5D00F6B946 /* Dream.swift in Sources */ = {isa = PBXBuildFile; fileRef = E07439CF23580B5D00F6B946 /* Dream.swift */; };
 		E07439D22358347400F6B946 /* AddDreamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E07439D12358347400F6B946 /* AddDreamViewController.swift */; };
 		E07439D423585DC900F6B946 /* UserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = E07439D323585DC800F6B946 /* UserProfile.swift */; };
+		E07439D623585E8F00F6B946 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E07439D523585E8F00F6B946 /* UserService.swift */; };
 		E0A34B2523579330004B1584 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E0A34B2423579330004B1584 /* GoogleService-Info.plist */; };
 		E0A34B27235799EB004B1584 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0A34B26235799EB004B1584 /* LoginViewController.swift */; };
 		E0CF0365235674BC00B20B22 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0CF0364235674BC00B20B22 /* AppDelegate.swift */; };
@@ -37,6 +38,7 @@
 		E07439CF23580B5D00F6B946 /* Dream.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dream.swift; sourceTree = "<group>"; };
 		E07439D12358347400F6B946 /* AddDreamViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddDreamViewController.swift; sourceTree = "<group>"; };
 		E07439D323585DC800F6B946 /* UserProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfile.swift; sourceTree = "<group>"; };
+		E07439D523585E8F00F6B946 /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
 		E0A34B2423579330004B1584 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		E0A34B26235799EB004B1584 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		E0CF0361235674BC00B20B22 /* dreamly.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = dreamly.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -132,6 +134,7 @@
 				E07439C32357E42B00F6B946 /* DreamTableViewCell.xib */,
 				E07439CC2357F56B00F6B946 /* DreamViewController.swift */,
 				E07439D12358347400F6B946 /* AddDreamViewController.swift */,
+				E07439D523585E8F00F6B946 /* UserService.swift */,
 				E07439CE23580B4800F6B946 /* Models */,
 			);
 			path = dreamly;
@@ -261,6 +264,7 @@
 				E07439C12357C69000F6B946 /* ProfileViewController.swift in Sources */,
 				E07439C42357E42B00F6B946 /* DreamTableViewCell.swift in Sources */,
 				E0CF036D235674BC00B20B22 /* dreamly.xcdatamodeld in Sources */,
+				E07439D623585E8F00F6B946 /* UserService.swift in Sources */,
 				E07439CD2357F56B00F6B946 /* DreamViewController.swift in Sources */,
 				E0CF0365235674BC00B20B22 /* AppDelegate.swift in Sources */,
 				E07439D023580B5D00F6B946 /* Dream.swift in Sources */,
