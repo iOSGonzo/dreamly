@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 import Firebase
 
-class DreamViewController: UIViewController {
+class DreamViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
     var tableView:UITableView!
     
@@ -22,6 +22,9 @@ class DreamViewController: UIViewController {
         let tableBackColor = hexStringToUIColor(hex: "#202040")
 
         tableView.backgroundColor = tableBackColor
+        
+        let cellNib = UINib(nibName: "DreamTableViewCell", bundle: nil)
+        tableView.register(cellNib, forCellReuseIdentifier: "dreamCell")
         view.addSubview(tableView)
         
         var layoutGuide:UILayoutGuide!
@@ -32,6 +35,11 @@ class DreamViewController: UIViewController {
         tableView.trailingAnchor.constraint(equalTo: layoutGuide.trailingAnchor).isActive = true
         tableView.bottomAnchor.constraint(equalTo: layoutGuide.bottomAnchor).isActive = true
 
+        
+        tableView.delegate = self
+        tableView.dataSource = self
+        tableView.reloadData()
+        
         let button = UIButton(frame: CGRect(x: 157, y: 622, width: 100, height: 100))
         let btnImage = UIImage(named: "addBtn.png")
         button.setImage(btnImage, for: .normal)
@@ -64,17 +72,18 @@ class DreamViewController: UIViewController {
         )
     }
     
-//    func numberOfSections(in tableView: UITableView) -> Int {
-//        return 1
-//    }
-//
-//    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-//        return 12
-//    }
-//
-//    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-//        let cell = tableView.dequeueReusableCell(withIdentifier: "", for: <#T##IndexPath#>)
-//    }
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
+
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 12
+    }
+
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "dreamCell", for: indexPath) as! DreamTableViewCell
+        return cell
+    }
     
     
     
