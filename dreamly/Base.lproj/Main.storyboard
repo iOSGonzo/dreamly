@@ -70,6 +70,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="LgI-ay-bSm"/>
                     </view>
+                    <extendedEdge key="edgesForExtendedLayout" top="YES"/>
                     <navigationItem key="navigationItem" title="Dream Journal" id="IYc-bT-Axp"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gqT-5g-rWf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

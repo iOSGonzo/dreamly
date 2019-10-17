@@ -14,10 +14,21 @@ class DreamViewController: UIViewController, UITableViewDelegate, UITableViewDat
 
     var tableView:UITableView!
     
+    
+    var dreams = [
+    
+        Dream(dreamName: "Nightmare", date: "10/31/19", rating: 1.0),
+        Dream(dreamName: "Crazy Dream", date: "10/20/19", rating: 3.0),
+        Dream(dreamName: "Thrilling Dream", date: "10/24/19", rating: 5.0)
+        
+    ]
+    
     override func viewDidLoad() {
+        
         
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        
         tableView = UITableView(frame: view.bounds, style: .plain)
         let tableBackColor = hexStringToUIColor(hex: "#202040")
 
@@ -26,7 +37,7 @@ class DreamViewController: UIViewController, UITableViewDelegate, UITableViewDat
         let cellNib = UINib(nibName: "DreamTableViewCell", bundle: nil)
         tableView.register(cellNib, forCellReuseIdentifier: "dreamCell")
         view.addSubview(tableView)
-        
+
         var layoutGuide:UILayoutGuide!
         layoutGuide = view.safeAreaLayoutGuide
         
@@ -34,7 +45,9 @@ class DreamViewController: UIViewController, UITableViewDelegate, UITableViewDat
         tableView.topAnchor.constraint(equalTo: layoutGuide.topAnchor).isActive = true
         tableView.trailingAnchor.constraint(equalTo: layoutGuide.trailingAnchor).isActive = true
         tableView.bottomAnchor.constraint(equalTo: layoutGuide.bottomAnchor).isActive = true
+
         tableView.separatorStyle = UITableViewCell.SeparatorStyle.none
+
 
         
         tableView.delegate = self
@@ -49,6 +62,7 @@ class DreamViewController: UIViewController, UITableViewDelegate, UITableViewDat
         self.view.addSubview(button)
 
     }
+    
     
     
     func hexStringToUIColor (hex:String) -> UIColor {
@@ -78,11 +92,12 @@ class DreamViewController: UIViewController, UITableViewDelegate, UITableViewDat
     }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 12
+        return dreams.count
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "dreamCell", for: indexPath) as! DreamTableViewCell
+        cell.set(dream: dreams[indexPath.row])
         return cell
     }
     

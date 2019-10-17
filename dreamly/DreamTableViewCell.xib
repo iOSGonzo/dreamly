@@ -81,6 +81,11 @@
             <color key="backgroundColor" red="0.12549019610000001" green="0.12549019610000001" blue="0.25098039220000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <color key="tintColor" red="0.12549019610000001" green="0.12549019610000001" blue="0.25098039220000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="dreamDateLabel" destination="tB5-DF-BXr" id="5gw-5L-IQn"/>
+                <outlet property="dreamNameLabel" destination="lPT-xG-vxj" id="jr8-ff-9MU"/>
+                <outlet property="ratingView" destination="NQK-xm-j5X" id="WHt-1A-KAT"/>
+            </connections>
             <point key="canvasLocation" x="113.768115942029" y="107.14285714285714"/>
         </tableViewCell>
     </objects>
