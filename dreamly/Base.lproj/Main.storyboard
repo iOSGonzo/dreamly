@@ -49,16 +49,12 @@
         <!--Dream Journal-->
         <scene sceneID="fWS-nD-JT5">
             <objects>
-                <viewController id="mbh-65-tl1" customClass="ViewController" customModule="dreamly" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="mbh-65-tl1" customClass="DreamViewController" customModule="dreamly" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="I5M-OO-wkz">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="725"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="oOw-kw-6yE">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="725"/>
-                                <color key="backgroundColor" red="0.12549019610000001" green="0.12549019610000001" blue="0.25098039220000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            </tableView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TMZ-qu-0qx">
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TMZ-qu-0qx">
                                 <rect key="frame" x="157" y="622" width="100" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="5dG-n8-2Ya"/>
@@ -69,12 +65,8 @@
                         </subviews>
                         <color key="backgroundColor" red="0.12549019610000001" green="0.12549019610000001" blue="0.25098039220000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="TMZ-qu-0qx" firstAttribute="centerX" secondItem="oOw-kw-6yE" secondAttribute="centerX" id="b8L-Wq-TtK"/>
-                            <constraint firstItem="oOw-kw-6yE" firstAttribute="top" secondItem="LgI-ay-bSm" secondAttribute="top" id="fpU-h0-tOq"/>
+                            <constraint firstItem="TMZ-qu-0qx" firstAttribute="centerX" secondItem="I5M-OO-wkz" secondAttribute="centerX" id="gFa-uq-Su5"/>
                             <constraint firstAttribute="bottomMargin" secondItem="TMZ-qu-0qx" secondAttribute="bottom" constant="3" id="iSa-qk-8tf"/>
-                            <constraint firstItem="oOw-kw-6yE" firstAttribute="bottom" secondItem="LgI-ay-bSm" secondAttribute="bottom" id="oWX-9m-Wg2"/>
-                            <constraint firstItem="oOw-kw-6yE" firstAttribute="leading" secondItem="LgI-ay-bSm" secondAttribute="leading" id="tIj-Is-tcv"/>
-                            <constraint firstItem="oOw-kw-6yE" firstAttribute="trailing" secondItem="LgI-ay-bSm" secondAttribute="trailing" id="yYl-9g-xe8"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="LgI-ay-bSm"/>
                     </view>

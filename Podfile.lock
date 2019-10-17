@@ -1,4 +1,5 @@
 PODS:
+  - Cosmos (20.0.1)
   - Firebase/Analytics (5.17.0):
     - Firebase/Core
   - Firebase/Auth (5.17.0):
@@ -70,13 +71,14 @@ PODS:
   - nanopb/encode (0.3.901)
 
 DEPENDENCIES:
+  - Cosmos (~> 20.0)
   - Firebase/Analytics
   - Firebase/Auth
   - Firebase/Core
   - Firebase/Database
 
 SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
+  https://github.com/CocoaPods/Specs.git:
     - Firebase
     - FirebaseAnalytics
     - FirebaseAuth
@@ -89,8 +91,11 @@ SPEC REPOS:
     - GTMSessionFetcher
     - leveldb-library
     - nanopb
+  trunk:
+    - Cosmos
 
 SPEC CHECKSUMS:
+  Cosmos: b47fddf2102bb48580cd3025d9ce0a5c658a65da
   Firebase: 59d557e064217fab6a03ff00baa73c06e73832e6
   FirebaseAnalytics: 75e4bbc6417d190cc98ec1f17c41a4fad4c2c976
   FirebaseAuth: 0f61e1329237da5682c49c9abd135e8f9d07a151
@@ -104,6 +109,6 @@ SPEC CHECKSUMS:
   leveldb-library: 08cba283675b7ed2d99629a4bc5fd052cd2bb6a5
   nanopb: 2901f78ea1b7b4015c860c2fdd1ea2fee1a18d48
 
-PODFILE CHECKSUM: 51e62ef42cfde9f402a1affb53cddb7905ddc30f
+PODFILE CHECKSUM: be8defad2ae25aa39746c29f8c59ce0939d81837
 
-COCOAPODS: 1.6.1
+COCOAPODS: 1.8.4

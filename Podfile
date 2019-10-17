@@ -11,4 +11,5 @@ target 'dreamly' do
 	pod 'Firebase/Auth'
 	pod 'Firebase/Core'
 	pod 'Firebase/Database'
+	pod 'Cosmos', '~> 20.0'
 end
