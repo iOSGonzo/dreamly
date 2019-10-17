@@ -28,4 +28,10 @@ class AddDreamViewController: UIViewController{
         self.view.endEditing(true)
     }
     
+    
+    @IBAction func saveDream(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
+    }
+    
+    
 }
