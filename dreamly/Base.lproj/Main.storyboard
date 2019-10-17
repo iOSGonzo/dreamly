@@ -66,10 +66,10 @@
             </objects>
             <point key="canvasLocation" x="1237.68115942029" y="107.8125"/>
         </scene>
-        <!--View Controller-->
+        <!--Add Dream View Controller-->
         <scene sceneID="nRE-1g-LGS">
             <objects>
-                <viewController id="MYL-CQ-2GU" sceneMemberID="viewController">
+                <viewController id="MYL-CQ-2GU" customClass="AddDreamViewController" customModule="dreamly" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="cKh-P9-Oal">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -232,10 +232,6 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="moon" translatesAutoresizingMaskIntoConstraints="NO" id="Y6e-24-MOc">
-                                <rect key="frame" x="354" y="266" width="46" height="57"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <view contentMode="scaleToFill" id="MFS-jC-y0z">
                                 <rect key="frame" x="-22" y="472" width="100" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -294,7 +290,7 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <view contentMode="scaleToFill" id="L6S-Ab-i03">
-                                <rect key="frame" x="331" y="451" width="100" height="100"/>
+                                <rect key="frame" x="331" y="454" width="100" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <viewLayoutGuide key="safeArea" id="Gjv-aD-20d"/>
@@ -309,10 +305,10 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="This dream went..." textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="bFr-7w-TPp">
-                                        <rect key="frame" x="47" y="-27" width="356" height="264"/>
+                                        <rect key="frame" x="47" y="-8" width="356" height="264"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="tintColor" red="0.12386152893304825" green="0.12320423871278763" blue="0.25517663359642029" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="textColor" red="0.10859216004610062" green="0.10799486190080643" blue="0.22823053598403931" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="29"/>
                                         <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardAppearance="alert"/>
                                         <userDefinedRuntimeAttributes>
@@ -344,6 +340,10 @@
                     </view>
                     <navigationItem key="navigationItem" id="ESW-fs-qIv"/>
                     <nil key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="dreamTextField" destination="bFr-7w-TPp" id="iFD-Q5-6eD"/>
+                        <outlet property="dreamTitleTextField" destination="VAs-v8-O8E" id="mIe-V0-wcP"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cuB-a8-zGb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -524,6 +524,5 @@
         <image name="cloud" width="1065" height="640"/>
         <image name="emptyStar" width="132" height="126"/>
         <image name="filledStar" width="132" height="126"/>
-        <image name="moon" width="1920" height="1800"/>
     </resources>
 </document>
