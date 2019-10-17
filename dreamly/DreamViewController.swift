@@ -16,11 +16,11 @@ class DreamViewController: UIViewController, UITableViewDelegate, UITableViewDat
     
     
     var dreams = [
-    
+
         Dream(dreamName: "Nightmare", date: "10/31/19", rating: 1.0),
         Dream(dreamName: "Crazy Dream", date: "10/20/19", rating: 3.0),
         Dream(dreamName: "Thrilling Dream", date: "10/24/19", rating: 5.0)
-        
+
     ]
     
     override func viewDidLoad() {
@@ -62,6 +62,7 @@ class DreamViewController: UIViewController, UITableViewDelegate, UITableViewDat
         self.view.addSubview(button)
 
     }
+    
     
     
     
