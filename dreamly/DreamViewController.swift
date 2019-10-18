@@ -158,6 +158,7 @@ class DreamViewController: UIViewController, UITableViewDelegate, UITableViewDat
             vc?.dateDetail = dreams[indexPath.row].date
             vc?.starsDetail = dreams[indexPath.row].rating
             vc?.notesDetail = dreams[indexPath.row].notes
+            vc?.index = indexPath.row
             
             self.navigationController?.showDetailViewController(vc!, sender: nil)
         } else {

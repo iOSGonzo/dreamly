@@ -244,6 +244,7 @@
                                         </userDefinedRuntimeAttributes>
                                         <connections>
                                             <action selector="saveDream:" destination="MYL-CQ-2GU" eventType="touchUpInside" id="cGT-1s-nDt"/>
+                                            <action selector="savePressed:" destination="OoV-8Y-pMv" eventType="touchUpInside" id="2zx-5K-aul"/>
                                         </connections>
                                     </button>
                                 </subviews>
