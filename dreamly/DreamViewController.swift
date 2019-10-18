@@ -173,7 +173,7 @@ class DreamViewController: UIViewController, UITableViewDelegate, UITableViewDat
          let dreamRef = Database.database().reference().child("users").child(userID!).child("dreams")
          let queryRef = dreamRef.queryOrdered(byChild: "date")
 
-         dreamRef.observeSingleEvent(of: .value, with: { ( snapshot ) in
+         queryRef.observeSingleEvent(of: .value, with: { ( snapshot ) in
             for child in snapshot.children{
                 
                 let snap = child as! DataSnapshot
