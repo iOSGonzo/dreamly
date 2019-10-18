@@ -16,6 +16,7 @@ class DreamViewController: UIViewController, UITableViewDelegate, UITableViewDat
 
     var ref = Database.database().reference()
 
+    var keyArray:[String] = []
     
     var dreams = [Dream]()
     
@@ -127,7 +128,39 @@ class DreamViewController: UIViewController, UITableViewDelegate, UITableViewDat
         return cell
     }
     
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete {
+            let userID = Auth.auth().currentUser?.uid
+
+            getAllKeys()
+            
+            let when = DispatchTime.now() + 1
+            DispatchQueue.main.asyncAfter(deadline: when, execute: {
+                Database.database().reference(withPath: "users").child(userID!).child("dreams").child(self.keyArray[indexPath.row]).removeValue()
+                self.dreams.remove(at: indexPath.row)
+                tableView.deleteRows(at: [indexPath], with: .automatic)
+                self.keyArray = []
+            })
+        
+        }
+    }
     
+    func getAllKeys(){
+        let userID = Auth.auth().currentUser?.uid
+
+         let dreamRef = Database.database().reference().child("users").child(userID!).child("dreams")
+         
+         dreamRef.observeSingleEvent(of: .value, with: { ( snapshot ) in
+            for child in snapshot.children{
+                
+                let snap = child as! DataSnapshot
+                let key = snap.key
+                self.keyArray.append(key)
+            }
+         })
+        
+    }
+
     
     @objc func buttonAction(sender: UIButton!) {
         self.performSegue(withIdentifier: "addDream", sender: self)
