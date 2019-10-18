@@ -145,6 +145,10 @@ class DreamViewController: UIViewController, UITableViewDelegate, UITableViewDat
         }
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        self.performSegue(withIdentifier: "showDreamDetail", sender: self)
+    }
+    
     func getAllKeys(){
         let userID = Auth.auth().currentUser?.uid
 
@@ -164,6 +168,6 @@ class DreamViewController: UIViewController, UITableViewDelegate, UITableViewDat
     
     @objc func buttonAction(sender: UIButton!) {
         self.performSegue(withIdentifier: "addDream", sender: self)
-        dump(dreams)
+//        dump(dreams)
     }
 }
