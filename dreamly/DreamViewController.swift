@@ -78,8 +78,9 @@ class DreamViewController: UIViewController, UITableViewDelegate, UITableViewDat
                     let dict = childSnapshot.value as? [String:Any],
                     let title = dict["title"] as? String,
                     let date = dict["date"] as? String,
-                    let rating = dict["rating"] as? Double{
-                    let dream = Dream(dreamName: title, date: date, rating: rating)
+                    let rating = dict["rating"] as? Double,
+                    let notes = dict["notes"] as? String{
+                    let dream = Dream(dreamName: title, date: date, notes: notes, rating: rating)
 
                     tempDreams.insert(dream, at:0)
                 }
@@ -145,6 +146,9 @@ class DreamViewController: UIViewController, UITableViewDelegate, UITableViewDat
         }
     }
     
+
+    
+
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
 //        self.performSegue(withIdentifier: "showDreamDetail", sender: self)
         
@@ -153,7 +157,8 @@ class DreamViewController: UIViewController, UITableViewDelegate, UITableViewDat
             vc?.titleDetail = dreams[indexPath.row].dreamName
             vc?.dateDetail = dreams[indexPath.row].date
             vc?.starsDetail = dreams[indexPath.row].rating
-
+            vc?.notesDetail = dreams[indexPath.row].notes
+            
             self.navigationController?.showDetailViewController(vc!, sender: nil)
         } else {
             print("error")
