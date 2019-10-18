@@ -346,7 +346,7 @@
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Edit dream name..." textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="R8x-mw-Jik">
                                 <rect key="frame" x="78" y="29" width="316" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" red="0.13886043429374695" green="0.13810786604881287" blue="0.28596818447113037" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="textColor" red="0.13886043429374695" green="0.13810786604881287" blue="0.28596818447113037" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="29"/>
                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardAppearance="alert"/>
@@ -667,6 +667,36 @@
                     <view key="view" contentMode="scaleToFill" id="7kR-JB-iPG">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="725"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QjZ-Jv-ldk">
+                                <rect key="frame" x="10" y="42" width="394" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="EnviromentBtn"/>
+                                <connections>
+                                    <segue destination="VIP-FN-1U8" kind="show" id="sDf-bk-YqU"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lBD-qZ-bU0">
+                                <rect key="frame" x="10" y="170" width="394" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="supplementsBtn"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gZK-JV-aht">
+                                <rect key="frame" x="10" y="298" width="394" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="sleepBtn"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x89-Ty-eJV">
+                                <rect key="frame" x="10" y="426" width="394" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="dietBtn"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kAT-PY-C1X">
+                                <rect key="frame" x="10" y="554" width="394" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="excerciseBtn"/>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="0.12549019610000001" green="0.12549019610000001" blue="0.25098039220000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="BAe-UL-JrA"/>
                     </view>
@@ -674,7 +704,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Fir-fk-tr9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1239.1304347826087" y="-588.61607142857144"/>
+            <point key="canvasLocation" x="1238" y="-1120"/>
         </scene>
         <!--Login View Controller-->
         <scene sceneID="VHb-mV-9aL">
@@ -741,6 +771,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="barTintColor" red="0.28627450980000002" green="0.28627450980000002" blue="0.41568627450000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </tabBar>
                     <userDefinedRuntimeAttributes>
@@ -758,15 +789,18 @@
             </objects>
             <point key="canvasLocation" x="-809" y="220"/>
         </scene>
-        <!--Tips-->
+        <!--Navigation Controller-->
         <scene sceneID="S0l-WB-JYS">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="RMC-5d-36q" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Tips" id="m5a-Ly-CCI"/>
+                    <tabBarItem key="tabBarItem" id="m5a-Ly-CCI">
+                        <color key="badgeColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBarItem>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="lxA-9r-mG5">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="barTintColor" red="0.28627450980000002" green="0.28627450980000002" blue="0.41568627450000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <textAttributes key="titleTextAttributes">
                             <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="24"/>
@@ -830,9 +864,30 @@
             </objects>
             <point key="canvasLocation" x="328" y="821"/>
         </scene>
+        <!--Enviroment-->
+        <scene sceneID="ZRH-xU-s45">
+            <objects>
+                <viewController id="VIP-FN-1U8" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="lgl-Em-Gnd">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="725"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.12549019610000001" green="0.12549019610000001" blue="0.25098039220000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="yzg-9l-dW8"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Enviroment" id="KxR-aY-nby"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4lR-Pc-CIp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2159" y="-1888"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="EnviromentBtn" width="2030" height="690"/>
+        <image name="dietBtn" width="2030" height="690"/>
         <image name="emptyStar" width="132" height="126"/>
+        <image name="excerciseBtn" width="2030" height="690"/>
         <image name="filledStar" width="132" height="126"/>
+        <image name="sleepBtn" width="2030" height="690"/>
+        <image name="supplementsBtn" width="2030" height="690"/>
     </resources>
 </document>
