@@ -154,7 +154,7 @@ class DreamViewController: UIViewController, UITableViewDelegate, UITableViewDat
             vc?.dateDetail = dreams[indexPath.row].date
             vc?.starsDetail = dreams[indexPath.row].rating
 
-            self.navigationController?.pushViewController(vc!, animated: true)
+            self.navigationController?.showDetailViewController(vc!, sender: nil)
         } else {
             print("error")
             // Fallback on earlier versions
@@ -166,13 +166,14 @@ class DreamViewController: UIViewController, UITableViewDelegate, UITableViewDat
         let userID = Auth.auth().currentUser?.uid
 
          let dreamRef = Database.database().reference().child("users").child(userID!).child("dreams")
-         
+         let queryRef = dreamRef.queryOrdered(byChild: "date")
+
          dreamRef.observeSingleEvent(of: .value, with: { ( snapshot ) in
             for child in snapshot.children{
                 
                 let snap = child as! DataSnapshot
                 let key = snap.key
-                self.keyArray.append(key)
+                self.keyArray.insert(key, at:0)
             }
          })
         
