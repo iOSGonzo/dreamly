@@ -19,13 +19,14 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="InJ-fM-wUo">
                                 <rect key="frame" x="10" y="283" width="394" height="75"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="31"/>
+                                <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="23"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yc8-3h-UmS">
-                                <rect key="frame" x="271" y="638" width="123" height="45"/>
+                                <rect key="frame" x="20" y="340" width="374" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
                                 <state key="normal" title="Logout">
                                     <color key="titleColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
@@ -394,7 +395,7 @@
                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardAppearance="alert"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
-                                        <color key="value" red="0.32057395577430725" green="0.3201882541179657" blue="0.45593172311782837" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="value" red="0.32156862745098036" green="0.32156862745098036" blue="0.45490196078431372" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </textField>
@@ -726,43 +727,85 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eLn-rN-e0s">
-                                <rect key="frame" x="129" y="380" width="156" height="34"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter Email" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eLn-rN-e0s">
+                                <rect key="frame" x="84" y="380" width="247" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="24"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
+                                        <color key="value" red="0.32156862745098036" green="0.32156862745098036" blue="0.45490196078431372" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qBq-pU-ynS">
-                                <rect key="frame" x="129" y="430" width="156" height="34"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qBq-pU-ynS">
+                                <rect key="frame" x="84" y="465" width="247" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="24"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
+                                        <color key="value" red="0.32156862745098036" green="0.32156862745098036" blue="0.45490196078431372" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nV2-CB-0gg">
-                                <rect key="frame" x="119.5" y="485" width="57" height="30"/>
-                                <state key="normal" title="Register"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nV2-CB-0gg">
+                                <rect key="frame" x="83" y="522" width="68" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="16"/>
+                                <state key="normal" title="Register">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <connections>
                                     <action selector="registerPressed:" destination="Xbi-1p-iJD" eventType="touchUpInside" id="mzQ-m0-y7e"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="biQ-w3-kVV">
-                                <rect key="frame" x="248" y="485" width="38" height="30"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="DreamlyLogo" translatesAutoresizingMaskIntoConstraints="NO" id="Tey-U0-Thu">
+                                <rect key="frame" x="88" y="160" width="240" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Login"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="EMAIL" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b3a-Bc-mo4">
+                                <rect key="frame" x="84" y="356" width="50" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="15"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" red="0.098521018020000004" green="0.12549019610000001" blue="0.25098039220000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </label>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="z51-tI-3fV">
+                                <rect key="frame" x="85" y="412" width="246" height="2"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="PASSWORD" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JkC-Ts-yve">
+                                <rect key="frame" x="84" y="441" width="95" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="15"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" red="0.098521018020000004" green="0.12549019610000001" blue="0.25098039220000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </label>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Eql-Ep-7Nw">
+                                <rect key="frame" x="85" y="497" width="246" height="2"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="biQ-w3-kVV">
+                                <rect key="frame" x="278" y="522" width="44" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="16"/>
+                                <state key="normal" title="Login">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <connections>
                                     <action selector="loginPressed:" destination="Xbi-1p-iJD" eventType="touchUpInside" id="cQf-Xo-fpP"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.12549019610000001" green="0.12549019610000001" blue="0.25098039220000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="eLn-rN-e0s" firstAttribute="centerX" secondItem="2FF-TP-ISA" secondAttribute="centerX" id="4lq-xe-ddh"/>
-                            <constraint firstItem="eLn-rN-e0s" firstAttribute="trailing" secondItem="qBq-pU-ynS" secondAttribute="trailing" id="AUa-KK-Di6"/>
-                            <constraint firstItem="qBq-pU-ynS" firstAttribute="centerX" secondItem="nV2-CB-0gg" secondAttribute="centerX" constant="59" id="BKt-kx-88Y"/>
-                            <constraint firstItem="eLn-rN-e0s" firstAttribute="leading" secondItem="qBq-pU-ynS" secondAttribute="leading" id="FnB-WH-Zi3"/>
-                            <constraint firstItem="nV2-CB-0gg" firstAttribute="top" secondItem="qBq-pU-ynS" secondAttribute="bottom" constant="21" id="ISQ-FK-skG"/>
-                            <constraint firstItem="qBq-pU-ynS" firstAttribute="top" secondItem="eLn-rN-e0s" secondAttribute="bottom" constant="16" id="Ta0-4w-GNY"/>
-                            <constraint firstItem="eLn-rN-e0s" firstAttribute="top" secondItem="Opp-xD-lHo" secondAttribute="top" constant="336" id="U1A-N7-1NW"/>
-                            <constraint firstItem="eLn-rN-e0s" firstAttribute="leading" secondItem="Opp-xD-lHo" secondAttribute="leading" constant="129" id="wln-Ig-SmJ"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Opp-xD-lHo"/>
                     </view>
                     <connections>
@@ -772,7 +815,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="06h-kW-7dO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1804" y="220"/>
+            <point key="canvasLocation" x="-1804.3478260869567" y="219.64285714285714"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="a7E-Bo-f1W">
@@ -810,7 +853,7 @@
         <scene sceneID="S0l-WB-JYS">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="RMC-5d-36q" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Tips" id="m5a-Ly-CCI">
+                    <tabBarItem key="tabBarItem" title="Tips" image="doc.fill" catalog="system" id="m5a-Ly-CCI">
                         <color key="badgeColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBarItem>
                     <toolbarItems/>
@@ -837,7 +880,7 @@
         <scene sceneID="3Er-dY-IXe">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="bRL-xD-umb" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Journal" id="Idq-41-dbh"/>
+                    <tabBarItem key="tabBarItem" title="Journal" image="book.fill" catalog="system" id="Idq-41-dbh"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="KYu-9O-mFS">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -861,7 +904,7 @@
         <scene sceneID="2m1-8d-wR4">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="a7I-Qs-lon" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Profile" id="jKM-K3-c3T"/>
+                    <tabBarItem key="tabBarItem" title="Profile" image="link" catalog="system" id="jKM-K3-c3T"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="ddv-Is-h4E">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -1044,11 +1087,15 @@ This is due to the stimulatory effect of exercise, which increases alertness and
         </scene>
     </scenes>
     <resources>
+        <image name="DreamlyLogo" width="1425" height="580"/>
         <image name="EnviromentBtn" width="2030" height="690"/>
+        <image name="book.fill" catalog="system" width="64" height="50"/>
         <image name="dietBtn" width="2030" height="690"/>
+        <image name="doc.fill" catalog="system" width="56" height="64"/>
         <image name="emptyStar" width="132" height="126"/>
         <image name="excerciseBtn" width="2030" height="690"/>
         <image name="filledStar" width="132" height="126"/>
+        <image name="link" catalog="system" width="64" height="58"/>
         <image name="sleepBtn" width="2030" height="690"/>
         <image name="supplementsBtn" width="2030" height="690"/>
     </resources>
