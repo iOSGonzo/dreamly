@@ -68,8 +68,9 @@ class DreamViewController: UIViewController, UITableViewDelegate, UITableViewDat
         let userID = Auth.auth().currentUser?.uid
 
         let dreamRef = Database.database().reference().child("users").child(userID!).child("dreams")
+        let queryRef = dreamRef.queryOrdered(byChild: "date")
 
-        dreamRef.observe(.value, with: { snapshot in
+        queryRef.observe(.value, with: { snapshot in
             var tempDreams = [Dream]()
             for child in snapshot.children{
                 if let childSnapshot = child as? DataSnapshot,
@@ -79,7 +80,7 @@ class DreamViewController: UIViewController, UITableViewDelegate, UITableViewDat
                     let rating = dict["rating"] as? Double{
                     let dream = Dream(dreamName: title, date: date, rating: rating)
 
-                    tempDreams.append(dream)
+                    tempDreams.insert(dream, at:0)
                 }
             }
 
