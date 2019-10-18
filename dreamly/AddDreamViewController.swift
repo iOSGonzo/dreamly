@@ -19,10 +19,13 @@ class AddDreamViewController: UIViewController{
     @IBOutlet weak var dreamTitleTextField: UITextField!
     @IBOutlet weak var editRating: CosmosView!
     
+    var userID: String?
+
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-    
+        userID = Auth.auth().currentUser!.uid
     }
     //dismiss keyboard on tapped outside
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
@@ -31,7 +34,15 @@ class AddDreamViewController: UIViewController{
     
     
     @IBAction func saveDream(_ sender: Any) {
+
+        let ref = Database.database().reference(withPath: "users").child(userID!)
         
+        guard let key = ref.child("dreams").childByAutoId().key else { return }
+        let dream = ["title":self.dreamTitleTextField.text!,
+                    "notes":self.dreamTextField.text!,
+                    "rating":self.editRating.rating] as [String : Any]
+        let childUpdates = ["/dreams/\(key)": dream]
+        ref.updateChildValues(childUpdates)
     }
     
     

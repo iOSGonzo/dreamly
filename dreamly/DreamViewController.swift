@@ -23,6 +23,8 @@ class DreamViewController: UIViewController, UITableViewDelegate, UITableViewDat
 
     ]
     
+    var userID: String?
+    
     override func viewDidLoad() {
         
         
@@ -60,10 +62,9 @@ class DreamViewController: UIViewController, UITableViewDelegate, UITableViewDat
         button.addTarget(self, action: #selector(buttonAction), for: .touchUpInside)
 
         self.view.addSubview(button)
-
+        let userID = Auth.auth().currentUser!.uid
+        
     }
-    
-    
     
     
     func hexStringToUIColor (hex:String) -> UIColor {
