@@ -22,6 +22,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         FirebaseApp.configure()
         IQKeyboardManager.shared.enable = true
 
+        RunLoop.current.run(until: Date(timeIntervalSinceNow: 2.5))
+
+        
         let authListener = Auth.auth().addStateDidChangeListener { auth, user in
             let storyboard = UIStoryboard(name: "Main", bundle: nil)
 
