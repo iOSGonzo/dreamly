@@ -883,6 +883,28 @@
                     <view key="view" contentMode="scaleToFill" id="lgl-Em-Gnd">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="725"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0N8-FK-M6i">
+                                <rect key="frame" x="15" y="20" width="384" height="689"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <mutableString key="text">Improve your sleep environment:
+A peaceful bedtime routine sends a powerful signal to your brain that it’s time to wind down and let go of the day’s stresses. Sometimes even small changes to your environment can make a big difference to your quality of sleep.
+
+Keep your room dark, cool, and quiet
+Keep noise down. If you can’t avoid or eliminate noise from neighbors, traffic, or other people in your household, try masking it with a fan or sound machine. Earplugs may also help.
+
+Keep your room cool. Most people sleep best in a slightly cool room (around 65° F or 18° C) with adequate ventilation. A bedroom that is too hot or too cold can interfere with quality sleep.
+
+Make sure your bed is comfortable. Your bed covers should leave you enough room to stretch and turn comfortably without becoming tangled. If you often wake up with a sore back or an aching neck, you may need to experiment with different levels of mattress firmness, foam toppers, and pillows that provide more or less support.
+
+Reserve your bed for sleeping and sex. By not working, watching TV, or using your phone, tablet, or computer in bed, your brain will associate the bedroom with just sleep and sex, which makes it easier to wind down at night.
+
+</mutableString>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" red="0.12549019610000001" green="0.12549019610000001" blue="0.25098039220000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="yzg-9l-dW8"/>
                     </view>
@@ -890,7 +912,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4lR-Pc-CIp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2019" y="-2969"/>
+            <point key="canvasLocation" x="2018.840579710145" y="-2969.1964285714284"/>
         </scene>
         <!--Supplements-->
         <scene sceneID="dbY-Hg-l0D">
@@ -899,6 +921,19 @@
                     <view key="view" contentMode="scaleToFill" id="GgG-7Q-QqV">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="725"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Eoy-Dy-k8o">
+                                <rect key="frame" x="15" y="20" width="384" height="689"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <mutableString key="text">Diphenhydramine (Benadryl, Aleve PM, others). Diphenhydramine is a sedating antihistamine. Side effects might include daytime drowsiness, dry mouth, blurred vision, constipation and urinary retention.
+Doxylamine succinate (Unisom SleepTabs). Doxylamine is also a sedating antihistamine. Side effects are similar to those of diphenhydramine.
+Melatonin. The hormone melatonin helps control your natural sleep-wake cycle. Some research suggests that melatonin supplements might be helpful in treating jet lag or reducing the time it takes to fall asleep — although the effect is typically mild. Side effects can include headaches and daytime sleepiness.
+Valerian. Supplements made from this plant are sometimes taken as sleep aids. Although a few studies indicate some therapeutic benefit, other studies haven't found the same benefits. Valerian generally doesn't appear to cause side effects.</mutableString>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" red="0.12549019610000001" green="0.12549019610000001" blue="0.25098039220000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="Ow5-cu-KIJ"/>
                     </view>
@@ -915,6 +950,16 @@
                     <view key="view" contentMode="scaleToFill" id="ch7-fA-Bmc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="725"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ONH-mQ-ELI">
+                                <rect key="frame" x="15" y="16" width="384" height="689"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">What Is a Sleep Cycle? A sleep cycle is the progression through the various stages of NREM sleep to REM sleep before beginning the progression again with NREM sleep. Typically, a person would begin a sleep cycle every 90-120 minutes resulting in four to five cycles per sleep time, or hours spent asleep.</string>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="25"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" red="0.12549019610000001" green="0.12549019610000001" blue="0.25098039220000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="RBe-Cu-kWY"/>
                     </view>
@@ -931,6 +976,22 @@
                     <view key="view" contentMode="scaleToFill" id="gsN-Py-LLd">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="725"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jy6-ZT-dDQ">
+                                <rect key="frame" x="15" y="16" width="384" height="689"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">Late-night eating may negatively impact both sleep quality and the natural release of HGH and melatonin.
+
+That said, the quality and type of your late-night snack may play a role as well.
+
+In one study, a high-carb meal eaten four hours before bed helped people fall asleep faster.
+
+Interestingly, one study discovered that a low-carb diet also improved sleep, indicating that carbs are not always necessary — especially if you are used to a low-carb diet.</string>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="22"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" red="0.12549019610000001" green="0.12549019610000001" blue="0.25098039220000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="h1J-Hz-CJn"/>
                     </view>
@@ -947,6 +1008,26 @@
                     <view key="view" contentMode="scaleToFill" id="S9e-5x-w36">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="725"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oTH-eQ-NlD">
+                                <rect key="frame" x="15" y="16" width="384" height="689"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <mutableString key="text">Exercise is one of the best science-backed ways to improve your sleep and health.
+
+It can enhance all aspects of sleep and has been used to reduce symptoms of insomnia
+
+One study in older adults determined that exercise nearly halved the amount of time it took to fall asleep and provided 41 more minutes of sleep at night.
+
+In people with severe insomnia, exercise offered more benefits than most drugs. Exercise reduced time to fall asleep by 55%, total night wakefulness by 30% and anxiety by 15% while increasing total sleep time by 18% 
+
+Although daily exercise is key for a good night's sleep, performing it too late in the day may cause sleep problems.
+
+This is due to the stimulatory effect of exercise, which increases alertness and hormones like epinephrine and adrenaline. However, some studies show no detrimental effects, so it clearly depends on the individual</mutableString>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="18"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" red="0.12549019610000001" green="0.12549019610000001" blue="0.25098039220000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="2wc-2o-piz"/>
                     </view>
