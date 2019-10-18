@@ -228,6 +228,25 @@
                             <view contentMode="scaleToFill" id="YHK-SB-Ey3">
                                 <rect key="frame" x="322" y="489" width="100" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y8G-oX-NGd">
+                                        <rect key="frame" x="0.0" y="32" width="77" height="39"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.10859215999999999" green="0.1079948619" blue="0.22823053600000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                        <state key="normal" title="Save">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <integer key="value" value="20"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="saveDream:" destination="MYL-CQ-2GU" eventType="touchUpInside" id="cGT-1s-nDt"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <viewLayoutGuide key="safeArea" id="ccl-MZ-lSa"/>
                                 <userDefinedRuntimeAttributes>
@@ -247,6 +266,19 @@
                                         <color key="textColor" red="0.10859216004610062" green="0.10799486190080643" blue="0.22823053598403931" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Edit dream details..." textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="nTK-yR-wAn">
+                                        <rect key="frame" x="63" y="-22" width="356" height="264"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="tintColor" red="0.1238615289" green="0.1232042387" blue="0.25517663359999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="textColor" red="0.10859215999999999" green="0.1079948619" blue="0.22823053600000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="29"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardAppearance="alert"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
+                                                <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <viewLayoutGuide key="safeArea" id="3Bl-vM-3L9"/>
@@ -273,6 +305,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
+                                    <action selector="editClicked:" destination="OoV-8Y-pMv" eventType="touchUpInside" id="VnY-2X-qrb"/>
                                     <action selector="saveDream:" destination="MYL-CQ-2GU" eventType="touchUpInside" id="Tf6-Xu-kPh"/>
                                 </connections>
                             </button>
@@ -309,6 +342,19 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Edit dream name..." textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="R8x-mw-Jik">
+                                <rect key="frame" x="78" y="29" width="316" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="textColor" red="0.13886043429374695" green="0.13810786604881287" blue="0.28596818447113037" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="29"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardAppearance="alert"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
+                                        <color key="value" red="0.32057395579999998" green="0.32018825410000001" blue="0.45593172310000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" red="0.12549019607843137" green="0.12549019607843137" blue="0.25098039215686274" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="2aZ-7G-Kw2"/>
@@ -320,6 +366,10 @@
                         <outlet property="dreamNotesDetail" destination="nKp-FC-Oec" id="DrX-SB-8CX"/>
                         <outlet property="dreamStarsDetail" destination="s3k-ed-6cc" id="5be-6Q-3sT"/>
                         <outlet property="dreamTitleDetail" destination="b2r-QS-9rM" id="fBs-1i-79u"/>
+                        <outlet property="editBtn" destination="Kuz-aT-Sem" id="ZB2-9Q-c5P"/>
+                        <outlet property="editDreamName" destination="R8x-mw-Jik" id="En5-tP-Rcl"/>
+                        <outlet property="editDreamNotes" destination="nTK-yR-wAn" id="eOg-qS-A8R"/>
+                        <outlet property="saveBtn" destination="Y8G-oX-NGd" id="P4g-Wo-pdv"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5ml-7E-Ett" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
