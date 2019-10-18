@@ -13,15 +13,11 @@ import Firebase
 class DreamViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
     var tableView:UITableView!
-    
-    
-    var dreams = [
 
-        Dream(dreamName: "Nightmare", date: "10/31/19", rating: 1.0),
-        Dream(dreamName: "Crazy Dream", date: "10/20/19", rating: 3.0),
-        Dream(dreamName: "Thrilling Dream", date: "10/24/19", rating: 5.0)
+    var ref = Database.database().reference()
 
-    ]
+    
+    var dreams = [Dream]()
     
     var userID: String?
     
@@ -54,7 +50,7 @@ class DreamViewController: UIViewController, UITableViewDelegate, UITableViewDat
         
         tableView.delegate = self
         tableView.dataSource = self
-        tableView.reloadData()
+        
         
         let button = UIButton(frame: CGRect(x: 157, y: 622, width: 100, height: 100))
         let btnImage = UIImage(named: "addBtn.png")
@@ -62,8 +58,51 @@ class DreamViewController: UIViewController, UITableViewDelegate, UITableViewDat
         button.addTarget(self, action: #selector(buttonAction), for: .touchUpInside)
 
         self.view.addSubview(button)
-        let userID = Auth.auth().currentUser!.uid
+        tableView.reloadData()
+        observeDreams()
+    }
+    
+    
+    func observeDreams(){
         
+        let userID = Auth.auth().currentUser?.uid
+
+        let dreamRef = Database.database().reference().child("users").child(userID!).child("dreams")
+
+        dreamRef.observe(.value, with: { snapshot in
+            var tempDreams = [Dream]()
+            for child in snapshot.children{
+                if let childSnapshot = child as? DataSnapshot,
+                    let dict = childSnapshot.value as? [String:Any],
+                    let title = dict["title"] as? String,
+                    let rating = dict["rating"] as? Double{
+
+                    let dream = Dream(dreamName: title, date: "10/10/10", rating: rating)
+
+                    tempDreams.append(dream)
+                }
+            }
+
+            self.dreams = tempDreams
+            self.tableView.reloadData()
+        })
+
+//        let userID = Auth.auth().currentUser?.uid
+//        ref.child("users").child(userID!).observeSingleEvent(of: .value, with: { (snapshot) in
+//            var tempDreams = [Dream]()
+//          // Get user value
+//            let value = snapshot.value as? NSDictionary
+//            let title = value?["title"] as? String ?? "Dream Name"
+//            let rating = value?["rating"] as? Double ?? 5.0
+//            let dream = Dream(dreamName: title, date: "10/20/20", rating: rating)
+//            tempDreams.append(dream)
+//
+//        self.dreams = tempDreams
+//        self.tableView.reloadData()
+//          }) { (error) in
+//            print(error.localizedDescription)
+//        }
+                    
     }
     
     
@@ -106,9 +145,7 @@ class DreamViewController: UIViewController, UITableViewDelegate, UITableViewDat
     
     
     @objc func buttonAction(sender: UIButton!) {
-        
-        print("Button tapped")
         self.performSegue(withIdentifier: "addDream", sender: self)
-
+        dump(dreams)
     }
 }

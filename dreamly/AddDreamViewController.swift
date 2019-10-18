@@ -34,6 +34,7 @@ class AddDreamViewController: UIViewController{
     
     
     @IBAction func saveDream(_ sender: Any) {
+        
 
         let ref = Database.database().reference(withPath: "users").child(userID!)
         
@@ -43,10 +44,14 @@ class AddDreamViewController: UIViewController{
                     "rating":self.editRating.rating] as [String : Any]
         let childUpdates = ["/dreams/\(key)": dream]
         ref.updateChildValues(childUpdates)
+        
+        dismiss(animated: true, completion: nil)
+
+            
+        }
+
     }
     
-    
-}
 
 extension Date {
 
