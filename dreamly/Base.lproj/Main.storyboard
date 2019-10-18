@@ -680,21 +680,33 @@
                                 <rect key="frame" x="10" y="170" width="394" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="supplementsBtn"/>
+                                <connections>
+                                    <segue destination="w10-SF-DxB" kind="show" id="OMu-qg-xVM"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gZK-JV-aht">
                                 <rect key="frame" x="10" y="298" width="394" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="sleepBtn"/>
+                                <connections>
+                                    <segue destination="1zJ-K8-5hr" kind="show" id="CNe-sh-xk8"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x89-Ty-eJV">
                                 <rect key="frame" x="10" y="426" width="394" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="dietBtn"/>
+                                <connections>
+                                    <segue destination="UHj-8u-As7" kind="show" id="OMg-6N-zTH"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kAT-PY-C1X">
                                 <rect key="frame" x="10" y="554" width="394" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="excerciseBtn"/>
+                                <connections>
+                                    <segue destination="V4B-Th-PgG" kind="show" id="cxH-Ei-mjx"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.12549019610000001" green="0.12549019610000001" blue="0.25098039220000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -704,7 +716,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Fir-fk-tr9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1238" y="-1120"/>
+            <point key="canvasLocation" x="86" y="-2563"/>
         </scene>
         <!--Login View Controller-->
         <scene sceneID="VHb-mV-9aL">
@@ -789,11 +801,11 @@
             </objects>
             <point key="canvasLocation" x="-809" y="220"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Tips-->
         <scene sceneID="S0l-WB-JYS">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="RMC-5d-36q" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" id="m5a-Ly-CCI">
+                    <tabBarItem key="tabBarItem" title="Tips" id="m5a-Ly-CCI">
                         <color key="badgeColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBarItem>
                     <toolbarItems/>
@@ -878,7 +890,71 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4lR-Pc-CIp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2159" y="-1888"/>
+            <point key="canvasLocation" x="2019" y="-2969"/>
+        </scene>
+        <!--Supplements-->
+        <scene sceneID="dbY-Hg-l0D">
+            <objects>
+                <viewController id="w10-SF-DxB" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="GgG-7Q-QqV">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="725"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.12549019610000001" green="0.12549019610000001" blue="0.25098039220000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="Ow5-cu-KIJ"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Supplements" id="Lvi-qP-4Wg"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OYT-r1-ISH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2019" y="-2285"/>
+        </scene>
+        <!--Sleep Cycles-->
+        <scene sceneID="Wxu-N7-V7Q">
+            <objects>
+                <viewController id="1zJ-K8-5hr" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ch7-fA-Bmc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="725"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.12549019610000001" green="0.12549019610000001" blue="0.25098039220000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="RBe-Cu-kWY"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Sleep Cycles" id="DhH-Yg-9Ng"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Naw-Ax-Bym" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2019" y="-1608"/>
+        </scene>
+        <!--Diet-->
+        <scene sceneID="rpa-5z-sPM">
+            <objects>
+                <viewController id="UHj-8u-As7" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gsN-Py-LLd">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="725"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.12549019610000001" green="0.12549019610000001" blue="0.25098039220000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="h1J-Hz-CJn"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Diet" id="oII-Nd-OS0"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="odg-3g-IZR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="910" y="-1608"/>
+        </scene>
+        <!--Excercise-->
+        <scene sceneID="yxs-nO-9Hx">
+            <objects>
+                <viewController id="V4B-Th-PgG" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="S9e-5x-w36">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="725"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.12549019610000001" green="0.12549019610000001" blue="0.25098039220000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="2wc-2o-piz"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Excercise" id="fkL-JZ-phZ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zvI-75-Ei8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-317" y="-1608"/>
         </scene>
     </scenes>
     <resources>
