@@ -34,23 +34,30 @@ class AddDreamViewController: UIViewController{
     
     
     @IBAction func saveDream(_ sender: Any) {
-        
 
         let ref = Database.database().reference(withPath: "users").child(userID!)
         
         guard let key = ref.child("dreams").childByAutoId().key else { return }
         let dream = ["title":self.dreamTitleTextField.text!,
                     "notes":self.dreamTextField.text!,
-                    "rating":self.editRating.rating] as [String : Any]
+                    "rating":self.editRating.rating,
+                    "date":self.getCurrentDate()] as [String : Any]
         let childUpdates = ["/dreams/\(key)": dream]
         ref.updateChildValues(childUpdates)
         
         dismiss(animated: true, completion: nil)
-
             
         }
-
+    
+    func getCurrentDate() -> String{
+        let formatter = DateFormatter()
+        formatter.dateStyle = .short
+        formatter.timeStyle = .none
+        let str = formatter.string(from: Date())
+        return str
     }
+
+}
     
 
 extension Date {

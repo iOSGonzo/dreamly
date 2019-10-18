@@ -75,9 +75,9 @@ class DreamViewController: UIViewController, UITableViewDelegate, UITableViewDat
                 if let childSnapshot = child as? DataSnapshot,
                     let dict = childSnapshot.value as? [String:Any],
                     let title = dict["title"] as? String,
+                    let date = dict["date"] as? String,
                     let rating = dict["rating"] as? Double{
-
-                    let dream = Dream(dreamName: title, date: "10/10/10", rating: rating)
+                    let dream = Dream(dreamName: title, date: date, rating: rating)
 
                     tempDreams.append(dream)
                 }
@@ -86,22 +86,6 @@ class DreamViewController: UIViewController, UITableViewDelegate, UITableViewDat
             self.dreams = tempDreams
             self.tableView.reloadData()
         })
-
-//        let userID = Auth.auth().currentUser?.uid
-//        ref.child("users").child(userID!).observeSingleEvent(of: .value, with: { (snapshot) in
-//            var tempDreams = [Dream]()
-//          // Get user value
-//            let value = snapshot.value as? NSDictionary
-//            let title = value?["title"] as? String ?? "Dream Name"
-//            let rating = value?["rating"] as? Double ?? 5.0
-//            let dream = Dream(dreamName: title, date: "10/20/20", rating: rating)
-//            tempDreams.append(dream)
-//
-//        self.dreams = tempDreams
-//        self.tableView.reloadData()
-//          }) { (error) in
-//            print(error.localizedDescription)
-//        }
                     
     }
     
