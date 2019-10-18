@@ -146,7 +146,20 @@ class DreamViewController: UIViewController, UITableViewDelegate, UITableViewDat
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        self.performSegue(withIdentifier: "showDreamDetail", sender: self)
+//        self.performSegue(withIdentifier: "showDreamDetail", sender: self)
+        
+        if #available(iOS 13.0, *) {
+            let vc = storyboard?.instantiateViewController(identifier: "DreamDetailViewController") as? DreamDetailViewController
+            vc?.titleDetail = dreams[indexPath.row].dreamName
+            vc?.dateDetail = dreams[indexPath.row].date
+            vc?.starsDetail = dreams[indexPath.row].rating
+
+            self.navigationController?.pushViewController(vc!, animated: true)
+        } else {
+            print("error")
+            // Fallback on earlier versions
+        }
+        
     }
     
     func getAllKeys(){

@@ -70,13 +70,13 @@
         <!--Dream Detail View Controller-->
         <scene sceneID="9vq-dF-XBQ">
             <objects>
-                <viewController id="OoV-8Y-pMv" customClass="DreamDetailViewController" customModule="dreamly" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DreamDetailViewController" id="OoV-8Y-pMv" customClass="DreamDetailViewController" customModule="dreamly" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="FYM-bo-QO2">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b2r-QS-9rM">
-                                <rect key="frame" x="109" y="361" width="196" height="90"/>
+                                <rect key="frame" x="109" y="196" width="196" height="90"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="31"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
