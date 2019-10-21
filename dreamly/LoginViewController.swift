@@ -20,6 +20,7 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var errorMessageLabel: UILabel!
+    @IBOutlet weak var errorMessagePasswordLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -55,11 +56,14 @@ class LoginViewController: UIViewController {
         if emailTextField.text != nil && passwordTextField.text != nil{
             Auth.auth().signIn(withEmail: emailTextField.text!, password: passwordTextField.text!) { (result, error) in
                 if error != nil{
-                    print("Error!:(")
+                    print("Error!:(" + error!.localizedDescription)
+                    self.errorMessagePasswordLabel.text = (error!.localizedDescription)
+                    self.errorMessagePasswordLabel.isHidden = false
                     sender.shake()
                 }
                 else{
                     self.uid = (result?.user.uid)!
+                    self.errorMessagePasswordLabel.isHidden = true
                 }
             }
         }
