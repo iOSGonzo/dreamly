@@ -935,7 +935,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0N8-FK-M6i">
                                 <rect key="frame" x="15" y="20" width="384" height="689"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <mutableString key="text">Improve your sleep environment:
+                                <string key="text">Improve your sleep environment:
 A peaceful bedtime routine sends a powerful signal to your brain that it’s time to wind down and let go of the day’s stresses. Sometimes even small changes to your environment can make a big difference to your quality of sleep.
 
 Keep your room dark, cool, and quiet
@@ -947,7 +947,7 @@ Make sure your bed is comfortable. Your bed covers should leave you enough room 
 
 Reserve your bed for sleeping and sex. By not working, watching TV, or using your phone, tablet, or computer in bed, your brain will associate the bedroom with just sleep and sex, which makes it easier to wind down at night.
 
-</mutableString>
+</string>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -973,10 +973,10 @@ Reserve your bed for sleeping and sex. By not working, watching TV, or using you
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Eoy-Dy-k8o">
                                 <rect key="frame" x="15" y="20" width="384" height="689"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <mutableString key="text">Diphenhydramine (Benadryl, Aleve PM, others). Diphenhydramine is a sedating antihistamine. Side effects might include daytime drowsiness, dry mouth, blurred vision, constipation and urinary retention.
+                                <string key="text">Diphenhydramine (Benadryl, Aleve PM, others). Diphenhydramine is a sedating antihistamine. Side effects might include daytime drowsiness, dry mouth, blurred vision, constipation and urinary retention.
 Doxylamine succinate (Unisom SleepTabs). Doxylamine is also a sedating antihistamine. Side effects are similar to those of diphenhydramine.
 Melatonin. The hormone melatonin helps control your natural sleep-wake cycle. Some research suggests that melatonin supplements might be helpful in treating jet lag or reducing the time it takes to fall asleep — although the effect is typically mild. Side effects can include headaches and daytime sleepiness.
-Valerian. Supplements made from this plant are sometimes taken as sleep aids. Although a few studies indicate some therapeutic benefit, other studies haven't found the same benefits. Valerian generally doesn't appear to cause side effects.</mutableString>
+Valerian. Supplements made from this plant are sometimes taken as sleep aids. Although a few studies indicate some therapeutic benefit, other studies haven't found the same benefits. Valerian generally doesn't appear to cause side effects.</string>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -1060,7 +1060,7 @@ Interestingly, one study discovered that a low-carb diet also improved sleep, in
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oTH-eQ-NlD">
                                 <rect key="frame" x="15" y="16" width="384" height="689"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <mutableString key="text">Exercise is one of the best science-backed ways to improve your sleep and health.
+                                <string key="text">Exercise is one of the best science-backed ways to improve your sleep and health.
 
 It can enhance all aspects of sleep and has been used to reduce symptoms of insomnia
 
@@ -1070,7 +1070,7 @@ In people with severe insomnia, exercise offered more benefits than most drugs. 
 
 Although daily exercise is key for a good night's sleep, performing it too late in the day may cause sleep problems.
 
-This is due to the stimulatory effect of exercise, which increases alertness and hormones like epinephrine and adrenaline. However, some studies show no detrimental effects, so it clearly depends on the individual</mutableString>
+This is due to the stimulatory effect of exercise, which increases alertness and hormones like epinephrine and adrenaline. However, some studies show no detrimental effects, so it clearly depends on the individual</string>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="18"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>

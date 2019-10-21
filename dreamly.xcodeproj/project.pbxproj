@@ -24,6 +24,7 @@
 		E0CF036D235674BC00B20B22 /* dreamly.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E0CF036B235674BC00B20B22 /* dreamly.xcdatamodeld */; };
 		E0CF036F235674BF00B20B22 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E0CF036E235674BF00B20B22 /* Assets.xcassets */; };
 		E0CF0372235674BF00B20B22 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0CF0370235674BF00B20B22 /* LaunchScreen.storyboard */; };
+		E0D2E180235DE61900B2089D /* BtnAnimations.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0D2E17F235DE61900B2089D /* BtnAnimations.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +48,7 @@
 		E0CF036E235674BF00B20B22 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E0CF0371235674BF00B20B22 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E0CF0373235674BF00B20B22 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E0D2E17F235DE61900B2089D /* BtnAnimations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BtnAnimations.swift; sourceTree = "<group>"; };
 		E2E71F3A3AD21EBBE17FDC3C /* Pods_dreamly.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_dreamly.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -133,6 +135,7 @@
 				E07439D12358347400F6B946 /* AddDreamViewController.swift */,
 				E07439CE23580B4800F6B946 /* Models */,
 				E07439D72359C70400F6B946 /* DreamDetailViewController.swift */,
+				E0D2E17F235DE61900B2089D /* BtnAnimations.swift */,
 			);
 			path = dreamly;
 			sourceTree = "<group>";
@@ -262,6 +265,7 @@
 				E0CF036D235674BC00B20B22 /* dreamly.xcdatamodeld in Sources */,
 				E07439D82359C70400F6B946 /* DreamDetailViewController.swift in Sources */,
 				E07439CD2357F56B00F6B946 /* DreamViewController.swift in Sources */,
+				E0D2E180235DE61900B2089D /* BtnAnimations.swift in Sources */,
 				E0CF0365235674BC00B20B22 /* AppDelegate.swift in Sources */,
 				E07439D023580B5D00F6B946 /* Dream.swift in Sources */,
 				E07439D22358347400F6B946 /* AddDreamViewController.swift in Sources */,

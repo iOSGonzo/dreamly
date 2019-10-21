@@ -12,19 +12,16 @@ import Firebase
 
 class DreamViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
+    // MARK: - Variables
+    
     var tableView:UITableView!
-
     var ref = Database.database().reference()
-
     var keyArray:[String] = []
-    
     var dreams = [Dream]()
-    
     var userID: String?
     
+    // MARK: - viewDidLoad
     override func viewDidLoad() {
-        
-        
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
@@ -47,7 +44,6 @@ class DreamViewController: UIViewController, UITableViewDelegate, UITableViewDat
 
         tableView.separatorStyle = UITableViewCell.SeparatorStyle.none
 
-
         
         tableView.delegate = self
         tableView.dataSource = self
@@ -64,6 +60,7 @@ class DreamViewController: UIViewController, UITableViewDelegate, UITableViewDat
     }
     
     
+    // MARK: - Functions
     func observeDreams(){
         
         let userID = Auth.auth().currentUser?.uid

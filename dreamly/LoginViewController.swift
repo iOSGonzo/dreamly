@@ -28,13 +28,14 @@ class LoginViewController: UIViewController {
 
     
     // MARK: - IBActions
-    @IBAction func registerPressed(_ sender: Any) {
+    @IBAction func registerPressed(_ sender: UIButton) {
         
 
             if emailTextField.text != nil && passwordTextField.text != nil{
                 Auth.auth().createUser(withEmail: emailTextField.text!, password: passwordTextField.text!) { (result, error) in
                     if error != nil{
                         print("Error!:( + " + error!.localizedDescription)
+                        sender.shake()
                     }
                     else{
                         self.uid = (result?.user.uid)!
@@ -47,11 +48,12 @@ class LoginViewController: UIViewController {
         }
 
     
-    @IBAction func loginPressed(_ sender: Any) {
+    @IBAction func loginPressed(_ sender: UIButton) {
         if emailTextField.text != nil && passwordTextField.text != nil{
             Auth.auth().signIn(withEmail: emailTextField.text!, password: passwordTextField.text!) { (result, error) in
                 if error != nil{
                     print("Error!:(")
+                    sender.shake()
                 }
                 else{
                     self.uid = (result?.user.uid)!
