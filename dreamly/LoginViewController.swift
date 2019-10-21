@@ -13,6 +13,8 @@ import FirebaseDatabase
 
 class LoginViewController: UIViewController {
 
+    // MARK: - Vars/IBOutlets
+    
     var uid: String = ""
     
     @IBOutlet weak var emailTextField: UITextField!
@@ -25,6 +27,7 @@ class LoginViewController: UIViewController {
     }
 
     
+    // MARK: - IBActions
     @IBAction func registerPressed(_ sender: Any) {
         
 
@@ -43,9 +46,6 @@ class LoginViewController: UIViewController {
             
         }
 
-        
-    
-    
     
     @IBAction func loginPressed(_ sender: Any) {
         if emailTextField.text != nil && passwordTextField.text != nil{
