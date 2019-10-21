@@ -13,5 +13,6 @@ target 'dreamly' do
 	pod 'Firebase/Database'
 	pod 'Cosmos', '~> 20.0'
 	pod 'IQKeyboardManagerSwift', '6.3.0'
+	pod 'paper-onboarding'
 
 end

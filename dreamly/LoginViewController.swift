@@ -19,7 +19,7 @@ class LoginViewController: UIViewController {
     
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
-    
+    @IBOutlet weak var errorMessageLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,12 +35,15 @@ class LoginViewController: UIViewController {
                 Auth.auth().createUser(withEmail: emailTextField.text!, password: passwordTextField.text!) { (result, error) in
                     if error != nil{
                         print("Error!:( + " + error!.localizedDescription)
+                        self.errorMessageLabel.text = (error!.localizedDescription)
+                        self.errorMessageLabel.isHidden = false
                         sender.shake()
                     }
                     else{
                         self.uid = (result?.user.uid)!
                         let ref = Database.database().reference(withPath: "users").child(self.uid)
                         ref.setValue(["email":self.emailTextField.text!, "password":self.passwordTextField.text!])
+                        self.errorMessageLabel.isHidden = true
                     }
                 }
             }

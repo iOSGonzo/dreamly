@@ -804,12 +804,21 @@
                                     <action selector="loginPressed:" destination="Xbi-1p-iJD" eventType="touchUpInside" id="cQf-Xo-fpP"/>
                                 </connections>
                             </button>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ERROR MESSAGE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0ZJ-RK-Jq8">
+                                <rect key="frame" x="142" y="356" width="189" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="11"/>
+                                <color key="textColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" red="0.098521018020000004" green="0.12549019610000001" blue="0.25098039220000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.12549019610000001" green="0.12549019610000001" blue="0.25098039220000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="Opp-xD-lHo"/>
                     </view>
                     <connections>
                         <outlet property="emailTextField" destination="eLn-rN-e0s" id="Mld-vb-cMD"/>
+                        <outlet property="errorMessageLabel" destination="0ZJ-RK-Jq8" id="0es-hI-hYA"/>
                         <outlet property="passwordTextField" destination="qBq-pU-ynS" id="WcS-kC-gbU"/>
                     </connections>
                 </viewController>
