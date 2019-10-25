@@ -10,10 +10,12 @@ import Foundation
 import UIKit
 import Firebase
 
+
+
 class DreamViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
     // MARK: - Variables
-    
+        
     var tableView:UITableView!
     var ref = Database.database().reference()
     var keyArray:[String] = []
@@ -24,6 +26,7 @@ class DreamViewController: UIViewController, UITableViewDelegate, UITableViewDat
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        
         
         tableView = UITableView(frame: view.bounds, style: .plain)
         let tableBackColor = hexStringToUIColor(hex: "#202040")
@@ -48,13 +51,15 @@ class DreamViewController: UIViewController, UITableViewDelegate, UITableViewDat
         tableView.delegate = self
         tableView.dataSource = self
         
-        
         let button = UIButton(frame: CGRect(x: 157, y: 622, width: 100, height: 100))
         let btnImage = UIImage(named: "addBtn.png")
         button.setImage(btnImage, for: .normal)
         button.addTarget(self, action: #selector(buttonAction), for: .touchUpInside)
 
+
         self.view.addSubview(button)
+
+        
         tableView.reloadData()
         observeDreams()
     }
@@ -112,7 +117,7 @@ class DreamViewController: UIViewController, UITableViewDelegate, UITableViewDat
         )
     }
     
-    func numberOfSections(in tableView: UITableView) -> Int {
+        func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
 

@@ -6,6 +6,7 @@
 //  Copyright © 2019 Gonzalo Birrueta. All rights reserved.
 //
 
+// MARK: - Libraries
 import Foundation
 import UIKit
 import FirebaseAuth
@@ -30,8 +31,6 @@ class LoginViewController: UIViewController {
     
     // MARK: - IBActions
     @IBAction func registerPressed(_ sender: UIButton) {
-        
-
             if emailTextField.text != nil && passwordTextField.text != nil{
                 Auth.auth().createUser(withEmail: emailTextField.text!, password: passwordTextField.text!) { (result, error) in
                     if error != nil{

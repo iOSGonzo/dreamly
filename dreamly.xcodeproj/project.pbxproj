@@ -133,9 +133,9 @@
 				E07439C32357E42B00F6B946 /* DreamTableViewCell.xib */,
 				E07439CC2357F56B00F6B946 /* DreamViewController.swift */,
 				E07439D12358347400F6B946 /* AddDreamViewController.swift */,
-				E07439CE23580B4800F6B946 /* Models */,
 				E07439D72359C70400F6B946 /* DreamDetailViewController.swift */,
 				E0D2E17F235DE61900B2089D /* BtnAnimations.swift */,
+				E07439CE23580B4800F6B946 /* Models */,
 			);
 			path = dreamly;
 			sourceTree = "<group>";
