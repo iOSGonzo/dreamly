@@ -191,5 +191,7 @@ class DreamViewController: UIViewController, UITableViewDelegate, UITableViewDat
     @objc func buttonAction(sender: UIButton!) {
         self.performSegue(withIdentifier: "addDream", sender: self)
 //        dump(dreams)
+        sender.pulsate()
+        
     }
 }
