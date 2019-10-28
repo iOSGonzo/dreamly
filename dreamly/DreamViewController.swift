@@ -55,7 +55,7 @@ class DreamViewController: UIViewController, UITableViewDelegate, UITableViewDat
         let btnImage = UIImage(named: "addBtn.png")
         button.setImage(btnImage, for: .normal)
         button.addTarget(self, action: #selector(buttonAction), for: .touchUpInside)
-
+        button.loopPulsate()
 
         self.view.addSubview(button)
 
@@ -191,7 +191,6 @@ class DreamViewController: UIViewController, UITableViewDelegate, UITableViewDat
     @objc func buttonAction(sender: UIButton!) {
         self.performSegue(withIdentifier: "addDream", sender: self)
 //        dump(dreams)
-        sender.pulsate()
-        
+                
     }
 }
