@@ -33,10 +33,14 @@ class AddDreamViewController: UIViewController{
     }
     
     
+    
+    
     // MARK: - IBActions
 
     @IBAction func saveDream(_ sender: Any) {
-
+        let generator = UINotificationFeedbackGenerator()
+        generator.notificationOccurred(.success)
+        
         let ref = Database.database().reference(withPath: "users").child(userID!)
         
         guard let key = ref.child("dreams").childByAutoId().key else { return }

@@ -50,19 +50,19 @@ class DreamViewController: UIViewController, UITableViewDelegate, UITableViewDat
         
         tableView.delegate = self
         tableView.dataSource = self
-        
+
         let button = UIButton(frame: CGRect(x: 157, y: 622, width: 100, height: 100))
         let btnImage = UIImage(named: "addBtn.png")
         button.setImage(btnImage, for: .normal)
         button.addTarget(self, action: #selector(buttonAction), for: .touchUpInside)
         button.loopPulsate()
-
         self.view.addSubview(button)
 
         
         tableView.reloadData()
         observeDreams()
     }
+    
     
     
     // MARK: - Functions
@@ -189,8 +189,9 @@ class DreamViewController: UIViewController, UITableViewDelegate, UITableViewDat
 
     
     @objc func buttonAction(sender: UIButton!) {
+        let generator = UINotificationFeedbackGenerator()
+        generator.notificationOccurred(.success)
         self.performSegue(withIdentifier: "addDream", sender: self)
 //        dump(dreams)
-                
     }
 }
